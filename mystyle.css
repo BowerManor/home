@@ -12,10 +12,95 @@ html, body {
 }
 h1 {
 	font-family: 'Roboto', sans-serif;
-    font-size: 10rem; /* Adjust size as needed */
+    font-size: 8rem; /* Adjust size as needed */
     font-weight: 700; /* Use bold weight */
     margin: 20px;
+	
+	
+}/* for navbar*/
+header.navbar {
+    
+    position: fixed; /* Sticky positioning */
+    top: 0; /* Aligns to the top of the viewport */
+	left:0;
+	width: 100%;
+    background-color: #ff000000; /* Dark background */
+    color: #fff; /* White text */
+    z-index: 1000; /* Ensure it stays above other content */
+	transition: background-color 2s;
 }
+header.navbar.scrolled {
+    background-color: #226822; /* New background color after scroll */
+}
+nav {
+    display: flex;
+    justify-content: flex-end; /* Align items to the right */
+    padding: 0 20px; /* Optional padding */
+}
+
+header.navbar nav ul {
+    list-style: none; /* Remove default list styling */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Display items in a row */
+    justify-content: center; /* Center items */
+}
+
+header.navbar nav ul li {
+    margin: 0 15px; /* Spacing between items */
+}
+
+header.navbar nav ul li a {
+    color: #fff; /* White text */
+    text-decoration: none; /* Remove underline */
+    font-size: 16px; /* Font size */
+    padding: 15px 0; /* Vertical padding */
+    display: inline-block; /* Allow padding to work */
+}
+
+main {
+    padding-top: 60px; /* Ensure content doesn't hide behind the navbar */
+} 
+/*--for navbar*/
+
+
+.subhead{
+	font-family: 'Roboto', sans-serif;
+    font-size: 2rem; /* Adjust size as needed */
+    font-weight: 700; /* Use bold weight */
+    margin-bottom: 20px;
+	margin-top: 20px;
+	position: relative;
+	text-align : left;
+}
+.container {
+    display: flex;
+    justify-content: space-between; /* Distributes space between the divs */
+    padding: 8px;
+    /*background-color: #f0f0f0; /* Light background for visibility */
+}
+
+/* Style for left div */
+.left-div {
+    text-align:left;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Style for right div */
+.right-div {
+    text-align: left;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+}
+/*for map container*/
+.map-container {
+            width: 100%;
+            height: 500px; /* Adjust height as needed */
+            overflow: hidden;
+        }
 
 /* Parallax Container */
 .parallax {
@@ -48,7 +133,7 @@ h1 {
 }
 .fade-element {
     
-    color: white;
+    color: black;
     position: fixed; /* Fixes the position relative to the viewport */
     left: 0; /* Aligns the div to the left edge of the viewport */
 	top: 0;
@@ -60,7 +145,7 @@ h1 {
 
 /* Parallax Background Images */
 .bg1 {
-    background-image: url('img/hero1.jpg');
+    background-image: url('img/hero11.jpg');
 }
 
 .bg2 {
@@ -70,7 +155,51 @@ h1 {
 .bg3 {
     background-image: url('img/hero3.jpg');
 }
+/* CSS for a large button */
+.large-button {
+	
+	
+  display: inline-block;
+  margin-top: 500px;
+  /*margin-left: 80px;*/
+  padding: 20px 40px; /* Increase padding for a larger button */
+  font-size: 18px; /* Larger font size for better readability */
+  font-weight: bold; /* Make text bold */
+  text-align: center; /* Center text within the button */
+  color: #fff; /* White text color */
+  background-color: #d966a3; /* Button background color (blue) */
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  text-decoration: none; /* Remove underline from text links */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+}
 
+.large-button:hover {
+  background-color: #8e436a; /* Darker blue on hover */
+}
+
+.large-button:active {
+  transform: scale(0.98); /* Slightly shrink button on click */
+}
+.drop-cap {
+	font-family: 'Lora', serif;
+	margin-top: 80px;
+	width: 80%; /* Adjust the width as needed */
+            max-width: 800px; /* Optional: Set a maximum width */
+            margin: 0 auto; /* Equal margins on left and right to center the block */
+            font-size: 25px; /* Font size for the paragraph text */
+            line-height: 1.6; /* Line height for better readability */
+            text-align: justify; /* Align text to justify */
+        }
+
+        .drop-cap::first-letter {
+			
+            font-size: 4em; /* Make the first letter larger */
+            float: left; /* Float the first letter to the left */
+            margin-right: 0.1em; /* Space between the first letter and the rest of the text */
+            margin-bottom: 0.1em; /* Space between the first letter and the bottom of the paragraph */
+        }
 /* Footer */
 footer {
     text-align: center;
