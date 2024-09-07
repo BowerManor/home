@@ -1,4 +1,26 @@
-<model-viewer src="cleanesterbig.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="1" tone-mapping="neutral" camera-orbit="-629.2deg 22.5deg 365.8m" field-of-view="30deg" min-camera-orbit="auto 0deg auto" max-camera-orbit="auto 90deg auto">
+<model-viewer src="cleanester.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="0.94" tone-mapping="neutral" exposure="1.63" shadow-softness="1" camera-orbit="91.81deg 0.0000573deg 36.58m" field-of-view="30deg" min-camera-orbit="auto 0deg 30cm" max-camera-orbit="auto 87deg auto">
+    <button class="Hotspot" slot="hotspot-1" data-position="0.7248646671707455m 0.7471260128141841m 2.0988231220403253m" data-normal="0.48101918687859585m 0.8745859715475547m 0.060991148758444254m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">Kargil point, Narkasur hill
+        </div>
+    </button><button class="Hotspot" slot="hotspot-2" data-position="3.026948602876942m 0.697597333391717m 1.9258727490078256m" data-normal="-0.2619634138644468m 0.9590449938919797m 0.10773982312597775m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">Garbhanga Wildlife Sanctuary
+        </div>
+    </button><button class="Hotspot" slot="hotspot-3" data-position="1.6291200921651738m 0.6704853082835631m 5.95775797924972m" data-normal="0.005969394049456059m 0.9999799424449323m 0.002116847304983291m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">Dipor Beel Bird Sanctuary</div>
+    </button><button class="Hotspot" slot="hotspot-4" data-position="-1.3116289494175533m 0.7225012151953626m 0.65182096649087m" data-normal="-0.3108671642202569m 0.9477044879861557m -0.07223440773311986m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">Kharguli Hills</div>
+    </button><button class="Hotspot" slot="hotspot-5" data-position="0.1580083195529078m 0.7169790495689331m 0.43873853790277073m" data-normal="0.15514257548865612m 0.987643931601186m 0.02214149141541237m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">Zoo/Hengrabari hills</div>
+    </button><button class="Hotspot" slot="hotspot-7" data-position="0.6178909869001309m 0.6864112066375183m -3.1397730088378757m" data-normal="0.010581988486272256m 0.9999381297214315m 0.0034290303122055557m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">Amchang Wildlife Sanctuary</div>
+    </button><button class="Hotspot" slot="hotspot-8" data-position="-3.4515569178837824m 0.7077447558667521m -5.023743823082912m" data-normal="-0.9999999857934366m 2.6544866938350075e-8m 0.00016856193513573725m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">Bhagawati Hill, Chandrapur
+        </div>
+    </button><button class="Hotspot" slot="hotspot-9" data-position="-0.24735224521156374m 0.8123644523201077m -2.422910706685748m" data-normal="0.2755020398640704m 0.8954585183324685m -0.3496464900103481m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">Wireless Pahar</div>
+    </button><button class="Hotspot" slot="hotspot-10" data-position="0.0956674102370696m 0.7505062569189217m 3.7530092128558246m" data-normal="0.18918708494513917m 0.9787261492657042m 0.07939377578555583m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">Nilachal hill (Kamakhya)</div>
+    </button>
     <div class="progress-bar hide" slot="progress-bar">
         <div class="update-bar"></div>
     </div>
