@@ -6,6 +6,16 @@
     <meta name="description" content="AR map">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link type="text/css" href="./styles.css" rel="stylesheet"/>
+	<style>
+        #info-box {
+            display: none;
+            position: absolute;
+            background: white;
+            border: 1px solid black;
+            padding: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+            z-index: 10;
+        }
   </head>
   <body>
     <!-- <model-viewer> HTML element -->
@@ -48,12 +58,18 @@
 
 	</script>
 	<script>
+	const infoBox = document.querySelector('#info-box');
+        let pinchStartDistance = null;
 		  const modelViewer2 = document.querySelector("#demo");
   const annotationClicked = (annotation) => {
     let dataset = annotation.dataset;
     modelViewer2.cameraTarget = dataset.target;
     modelViewer2.cameraOrbit = dataset.orbit;
     modelViewer2.fieldOfView = '45deg';
+	 // Position the info box relative to the model viewer
+                const rect = event.target.getBoundingClientRect();
+                infoBox.style.top = `${rect.top + window.scrollY + 20}px`;
+                infoBox.style.left = `${rect.left + window.scrollX + 20}px`;
   }
 
   modelViewer2.querySelectorAll('button').forEach((hotspot) => {
