@@ -158,15 +158,18 @@ main {
 .bg3 {
     background-image: url('img/hero3.jpg');
 }
+.bg4 {
+    background-image: url('img/hero3.jpg');
+}
 /* CSS for a large button */
 .large-button {
 	
 	
   display: inline-block;
   margin-top: 500px;
-  /*margin-left: 80px;*/
+  margin-left: 100px;
   padding: 20px 40px; /* Increase padding for a larger button */
-  font-size: 18px; /* Larger font size for better readability */
+  font-size: 50px; /* Larger font size for better readability */
   font-weight: bold; /* Make text bold */
   text-align: center; /* Center text within the button */
   color: #fff; /* White text color */

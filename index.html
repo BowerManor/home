@@ -13,17 +13,18 @@
 <header class="navbar" id="navbar">
         <nav>
             <ul>
-                <li><a href="#home">Stay</a></li>
-                <li><a href="#services">Explore</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Book</a></li>
+                <li><a href="#book">Book</a></li>
+                <li><a href="#vibes">Vibes</a></li>
+                <li><a href="#reach">Reach</a></li>
+                <li><a href="#explore">Explore</a></li>
+				<li><a href="#FAQ">FAQ</a></li>
             </ul>
         </nav>
 		
     </header>
 	
 
-<section class="parallax bg1">
+<section class="parallax bg1" id="book">
         <div class="content2">
             <!--<h1>Section 1</h1>-->
 			<div class="fade-element">
@@ -34,6 +35,9 @@
     <a href="#"  onclick="showCards(); return false;" class="large-button">Book Now</a>
 			<script src="script.js"></script>
 			 <style>
+			 html {
+            scroll-behavior: smooth;
+        }
         brody {
            display: flex;
             flex-direction: column;
@@ -119,7 +123,7 @@
 		
     </section>
     <section class="parallax bg2">
-        <div class="content">
+        <div class="content" id="vibes">
             
 			<!-- for photo gallery */ -->
 			<style>
@@ -171,7 +175,7 @@
 	<!-- photo gallery end -->
         </div>
     </section>
-    <section class="content-section">
+    <section class="content-section" id="reach">
         <div class="container">
 		
         <div class="left-div">
@@ -198,7 +202,83 @@
     </section>
     <section class="parallax bg3">
         <div class="content">
-            <h1>Section 3</h1>
+            <h1>Explore</h1>
+			
+        </div>
+    </section>
+	<section class="parallax bg4" id="FAQ">
+	<div class="content">
+            <!--faq section-->
+			<style>
+			.faq {
+            width: 800px;
+            
+            background: white;
+            padding: 20px;
+            margin-top: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .faq-item {
+            border-bottom: 1px solid #ddd;
+        }
+        .faq-question {
+            width: 100%;
+            background: #eee;
+            padding: 15px;
+            font-size: 30px;
+            font-weight: bold;
+            text-align: left;
+            border: 10px;
+            outline: none;
+            cursor: pointer;
+			font-family: 'Roboto'
+        }
+        .faq-answer {
+			
+            display: none;
+            padding: 15px;
+            font-size: 16px;
+            background: #f9f9f9;
+			color: black;
+        }</style>
+		<script>
+        function toggleAnswer(element) {
+            var answer = element.nextElementSibling;
+            if (answer.style.display === "block") {
+                answer.style.display = "none";
+            } else {
+                answer.style.display = "block";
+            }
+        }
+    </script>
+	<div class="faq">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleAnswer(this)">What time is Check in & Check out?</button>
+            <div class="faq-answer">Check-in is from 1pm onwards. Earlier check in is available by arrangement.<br>Guests are to check out by 11 am on the day of departure.<br> If some delay is expected, please make arrangements with us earlier.</div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleAnswer(this)">Can you arrange for food?</button>
+            <div class="faq-answer">Breakfast can be provided on request at a discretionary charge.</div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleAnswer(this)">What about laundry?</button>
+            <div class="faq-answer">Yes, laundry is available on request at a discretionary charge.<br> If you decide to do it yourselves, please do not dry the clothes indoors, do ask us for spots for drying laundry.</div>
+        </div>
+		<div class="faq-item">
+            <button class="faq-question" onclick="toggleAnswer(this)">Do you have parking?</button>
+            <div class="faq-answer">Yes, Parking for vehicles is available within the premises with outdoor CCTV camera coverage.</div>
+        </div>
+		<div class="faq-item">
+            <button class="faq-question" onclick="toggleAnswer(this)">Is it safe for .....</button>
+            <div class="faq-answer">Yes, unmarried couples are welcome here as long as both are above 21.<br> We also require submission of id cards for all guests</div>
+        </div>
+		<div class="faq-item">
+            <button class="faq-question" onclick="toggleAnswer(this)">Are parties allowed?</button>
+            <div class="faq-answer">Please make arrangements with us prior to the party, stating exactly the number of guests. <br> Additional cleaning charges may be charged depending on the size and scope of the party </div>
+        </div>
+    </div>
         </div>
     </section>
     <footer>
